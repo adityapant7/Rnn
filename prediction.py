@@ -4,7 +4,7 @@ import numpy as np
 from tensorflow.keras.datasets import imdb
 from tensorflow.keras.preprocessing import sequence
 import streamlit as st
-model=load_model('model.keras')
+model=load_model('model.h5')
 word_index=imdb.get_word_index()
 reverse_index={value:key for key,value in word_index.items()}
 # function to decode
