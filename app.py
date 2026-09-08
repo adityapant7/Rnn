@@ -22,4 +22,4 @@ model.compile(optimizer='adam',loss='binary_crossentropy',metrics=['accuracy'])
 earlystopping=EarlyStopping(monitor='val_loss',patience=5,restore_best_weights=True)
 #train the model with early stopping
 history=model.fit(X_train,Y_train,epochs=10,callbacks=earlystopping,validation_split=0.2)
-model.save('model.keras')
+model.save('model.h5')
